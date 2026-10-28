@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css.css" type="text/css" />
+	<title>Quiz App</title>
+	</head>
+	<body>
+		<header class="app-header"><div class="brand">Quiz App</div><div class="course-name">JavaScript &amp; the DOM &nbsp; / &nbsp; Practice 2</div></header>
+		<main>
+			<div class="crumb">JavaScript review / Knowledge check</div>
+			<section class="quiz-card" aria-label="Practice quiz">
+			<div class="card-top"><span class="label">Knowledge Check</span><span class="count" id="count"></span></div>
+			<div class="progress"><span id="progress"></span></div>
+			<div id="question-area">
+				<h1 id="question"></h1>
+				<div id="answers" class="answers"></div>
+				<div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+				<div class="bottom"><span class="hint">Progress isn't saved when you leave.</span><button id="next-btn" disabled>Next Question</button></div>
+			</div>
+			</section>
+		</main>
+	</body>
+</html>
+<script src="quizz.js" type="module"></script>
